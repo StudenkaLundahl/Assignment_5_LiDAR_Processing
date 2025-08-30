@@ -1,0 +1,7 @@
+Dataset: dataset2
+Ground level (final): 62.265 m
+DBSCAN eps (estimated): 0.543
+Clusters (excl. noise): 600
+Noise points: 3397
+Kept after ground removal: 75.49%
+Catenary bbox (XY): min(x)=13.656, min(y)=0.053, max(x)=32.813, max(y)=44.810
