@@ -110,7 +110,8 @@ Assignment_5_LiDAR_Processing/
 
 ## 📖 Documentation
 
-**Complete Technical Report:** [`Documentation/Assignment_5_Report_Studenka_Lundahl.pdf`] Documentation/Assignment_5_Report_Studenka_Lundahl.pdf
+**Complete Technical Report:** [View on GitHub](https://github.com/StudenkaLundahl/Assignment_5_LiDAR_Processing/blob/main/Documentation/Assignment_5_Report_Studenka_Lundahl.pdf)
+
 
 The technical report includes:
 - Detailed methodology explanations
