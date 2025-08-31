@@ -1,10 +1,10 @@
 # Assignment_5_LiDAR_Processing
 LiDAR Point Cloud Processing for Power Line Analysis - Assignment 5
 
-**Student:** Studenka Lundahl  
-**Course:** Industrial AI and eMaintenance - Part I: Theories & Concepts  
-**Assignment 5:** Point cloud processing techniques  
-**Date:** 2025
+**Student:** [Studenka Lundahl]
+**Course:** [Industrial AI and eMaintenance - Part I: Theories & Concepts]
+**Assignment 5:** [Point cloud processing techniques]
+**Date:** [2025]
 
 ## 🎯 Project Overview
 
@@ -39,8 +39,8 @@ python Code/share_SL_v5.py
 - **Plots:** `Results/elbow_dataset*.png`, `Results/clusters_dataset*.png`
 
 ### Task 3: Catenary Detection
-- **Dataset1:** Cluster 3, XY span: 21.9m × 56.9m
-- **Dataset2:** Cluster 2, XY span: 19.2m × 44.8m
+- **Dataset1:** Identified catenary cluster (label 3 in this run), XY span: 21.9m × 56.9m
+- **Dataset2:** Identified catenary cluster (label 2 in this run), XY span: 19.2m × 44.8m
 - **Method:** Largest XY span analysis for linear structures
 - **Plots:** `Results/catenary_dataset*.png`
 
@@ -50,7 +50,7 @@ python Code/share_SL_v5.py
 Assignment_5_LiDAR_Processing/
 │
 ├── Code/
-│   ├── share_SL_v5.py          # Main implementation
+│   ├── share_SL_v6.py          # Main implementation
 │   ├── dataset1.npy            # Input dataset 1
 │   └── dataset2.npy            # Input dataset 2
 │
@@ -59,6 +59,8 @@ Assignment_5_LiDAR_Processing/
 │   ├── histogram_dataset2.png
 │   ├── ground_analysis_dataset1.png
 │   ├── ground_analysis_dataset2.png
+│   ├── 3d_view_dataset1_above_ground.png
+│   ├── 3d_view_dataset2_above_ground.png
 │   ├── elbow_dataset1.png       # Task 2: DBSCAN optimization
 │   ├── elbow_dataset2.png
 │   ├── clusters_dataset1.png
@@ -70,7 +72,7 @@ Assignment_5_LiDAR_Processing/
 │   └── results_summary.md       # Combined analysis
 │
 ├── Documentation/
-│   └── Assignment_5_Report_Studenka_Lundahl.pdf  # Complete technical report
+│   └── Assignment_5_Report_Studenka_Lundahl_v2.pdf  # Complete technical report
 │
 └── README.md                    # This file
 ```
