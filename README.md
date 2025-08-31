@@ -1,10 +1,10 @@
 # Assignment_5_LiDAR_Processing
 LiDAR Point Cloud Processing for Power Line Analysis - Assignment 5
 
-**Student:** [Studenka Lundahl]
-**Course:** [Industrial AI and eMaintenance - Part I: Theories & Concepts]
-**Assignment 5:** [Point cloud processing techniques]
-**Date:** [2025]
+**Student:** Studenka Lundahl  
+**Course:** Industrial AI and eMaintenance - Part I: Theories & Concepts  
+**Assignment 5:** Point cloud processing techniques  
+**Date:** 2025
 
 ## 🎯 Project Overview
 
@@ -13,7 +13,7 @@ This project implements advanced LiDAR point cloud processing techniques for aut
 ## 🚀 Quick Start
 
 ```bash
-python Code/share_SL_v5.py
+python Code/share_SL_v6.py
 ```
 
 **Requirements:**
@@ -26,22 +26,27 @@ python Code/share_SL_v5.py
 ## 📊 Results Summary
 
 ### Task 1: Ground Level Detection
-- **Dataset1:** 62.25 m (65.36% points retained)
-- **Dataset2:** 62.27 m (75.49% points retained)
-- **Method:** Histogram peak detection with buffer
-- **Plots:** `Results/histogram_dataset*.png`
+- **Dataset1:** 62.25 m (65.36% points retained)  
+- **Dataset2:** 62.27 m (75.49% points retained)  
+- **Method:** Histogram peak detection with buffer  
+- **Plots:**  
+  - `Results/histogram_dataset*.png`  
+  - `Results/ground_analysis_dataset*.png`  
+  - `Results/3d_view_dataset*_above_ground.png` (3D visualization of filtered clouds)
 
 ### Task 2: DBSCAN Clustering Optimization
-- **Dataset1:** eps=0.462 (413 clusters, 2423 noise points)
+- **Dataset1:** eps=0.462 (413 clusters, 2423 noise points)  
 - **Dataset2:** eps=0.543 (600 clusters, 3397 noise points)  
-- **Method:** K-distance elbow method with 90th percentile
-- **Note:** Many small clusters are generated, but catenary identification relies on XY span rather than cluster size
-- **Plots:** `Results/elbow_dataset*.png`, `Results/clusters_dataset*.png`
+- **Method:** K-distance elbow method with 90th percentile  
+- **Note:** Many small clusters are generated, but catenary identification relies on XY span rather than cluster size  
+- **Plots:**  
+  - `Results/elbow_dataset*.png`  
+  - `Results/clusters_dataset*.png`  
 
 ### Task 3: Catenary Detection
-- **Dataset1:** Identified catenary cluster (label 3 in this run), XY span: 21.9m × 56.9m
-- **Dataset2:** Identified catenary cluster (label 2 in this run), XY span: 19.2m × 44.8m
-- **Method:** Largest XY span analysis for linear structures
+- **Dataset1:** Identified catenary cluster (label 3 in this run), XY span: 21.9m × 56.9m  
+- **Dataset2:** Identified catenary cluster (label 2 in this run), XY span: 19.2m × 44.8m  
+- **Method:** Largest XY span analysis for linear structures  
 - **Plots:** `Results/catenary_dataset*.png`
 
 ## 📁 Repository Structure
@@ -82,7 +87,7 @@ Assignment_5_LiDAR_Processing/
 ### Task 1: Ground Level Detection (Grade 3)
 - **Algorithm:** Histogram-based Z-coordinate analysis
 - **Key Innovation:** Mode detection with adaptive buffer
-- **Output:** Ground level threshold and filtered point cloud
+- **Output:** Ground level threshold, filtered point cloud, and 3D validation plots
 
 ### Task 2: DBSCAN Optimization (Grade 4)  
 - **Algorithm:** K-distance elbow method for epsilon estimation
@@ -106,53 +111,51 @@ Assignment_5_LiDAR_Processing/
 
 ## 🎓 Grade Achievement
 
-- ✅ **Grade 3:** Ground level detection using histogram analysis
+- ✅ **Grade 3:** Ground level detection using histogram analysis  
 - ✅ **Grade 4:** DBSCAN clustering with optimal epsilon estimation  
-- ✅ **Grade 5:** Catenary detection using XY span geometric analysis
+- ✅ **Grade 5:** Catenary detection using XY span geometric analysis  
 
 ## 📖 Documentation
 
 **Complete Technical Report:** [View on GitHub](https://github.com/StudenkaLundahl/Assignment_5_LiDAR_Processing/blob/main/Documentation/Assignment_5_Report_Studenka_Lundahl.pdf)
 
-
 The technical report includes:
-- Detailed methodology explanations
+- Detailed methodology explanations  
 - Algorithm implementation analysis  
-- Comprehensive results discussion
-- Performance evaluation metrics
-- Future improvement recommendations
+- Comprehensive results discussion  
+- Performance evaluation metrics  
+- Future improvement recommendations  
 
 ## 🛠️ Technical Features
 
 **Advanced Implementations:**
-- Automated parameter selection (no manual tuning required)
-- Robust statistical methods (percentile-based approaches)
-- Professional visualization with comprehensive annotations
-- Complete documentation generation system
-- Geometric analysis optimized for power line structures
+- Automated parameter selection (no manual tuning required)  
+- Robust statistical methods (percentile-based approaches)  
+- Professional visualization with comprehensive annotations  
+- Complete documentation generation system  
+- Geometric analysis optimized for power line structures  
 
 **Code Quality:**
-- Clean, well-documented Python implementation
-- Modular design with reusable functions
-- Comprehensive error handling and validation
-- Professional-grade plotting and visualization
+- Clean, well-documented Python implementation  
+- Modular design with reusable functions  
+- Comprehensive error handling and validation  
+- Professional-grade plotting and visualization  
 
 ## 📚 References
 
 Key research papers and resources used:
-1. DBSCAN clustering algorithm fundamentals
-2. Semantic 3D scene interpretation techniques  
-3. Point-based classification for power line corridors
-4. Optimal epsilon determination methods
-
-*Complete references available in the technical report.*
+1. Chauhan, N.S. (2022). *DBSCAN Clustering Algorithm in Machine Learning*. KDnuggets.  
+2. Weinmann, M., Jutzi, B., & Mallet, C. (2014). *Semantic 3D scene interpretation*. ISPRS Annals.  
+3. Kim, H.B., & Sohn, G. (2013). *Point-based classification of power line corridor scene using random forests*. PE&RS.  
+4. Rahmah, N., & Sitanggang, I.S. (2016). *Determination of optimal epsilon (eps) value on DBSCAN algorithm*. IOP Conf. Ser. Earth Environ. Sci.  
+5. Sharma, A. (2020). *How to master the popular DBSCAN clustering algorithm*. Analytics Vidhya.  
 
 ## 📧 Contact
 
-**Student:** [Studenka Lundahl]
-**Email:** [stulun-5@student.ltu.se]  
-**Course:** [Industrial AI and eMaintenance - Part I: Theories & Concepts]
+**Student:** Studenka Lundahl  
+**Email:** stulun-5@student.ltu.se  
+**Course:** Industrial AI and eMaintenance - Part I: Theories & Concepts  
 
 ---
 
-*Project completed as part of [Industrial AI and eMaintenance - Part I: Theories & Concepts] - Point Cloud Processing Techniques*
+*Project completed as part of Industrial AI and eMaintenance - Part I: Theories & Concepts – Point Cloud Processing Techniques*  
